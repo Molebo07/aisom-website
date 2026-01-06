@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-aisom-slate-700 leading-relaxed;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold leading-tight tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl text-aisom-slate-900;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl text-aisom-slate-900;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl text-aisom-slate-900;
+  }
+
+  h4 {
+    @apply text-lg md:text-xl text-aisom-slate-900;
+  }
+
+  p {
+    @apply text-aisom-slate-600 leading-relaxed text-sm md:text-base;
+  }
+
+  * {
+    @apply border-aisom-gunmetal-200;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-aisom-blue-500 hover:bg-aisom-blue-600 text-white px-4 py-2 rounded font-medium text-sm transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-aisom-gunmetal-100 hover:bg-aisom-gunmetal-200 text-aisom-slate-700 hover:text-aisom-slate-800 px-4 py-2 rounded font-medium text-sm transition-colors duration-200 border border-aisom-gunmetal-300;
+  }
+
+  .section-padding {
+    @apply py-12 md:py-16 px-6 md:px-12;
+  }
+
+  .container-max {
+    @apply max-w-5xl mx-auto;
+  }
+
+  .platform-section {
+    @apply bg-aisom-cool-50 border border-aisom-gunmetal-200 rounded-lg;
+  }
+
+  .platform-header {
+    @apply border-b border-aisom-gunmetal-200 bg-aisom-gunmetal-50 px-6 py-4;
+  }
+
+  .platform-content {
+    @apply px-6 py-6;
+  }
+
+  .capability-list {
+    @apply space-y-3;
+  }
+
+  .capability-item {
+    @apply flex items-start space-x-3 text-sm;
+  }
+
+  .capability-bullet {
+    @apply w-1.5 h-1.5 bg-aisom-blue-500 rounded-full mt-2 flex-shrink-0;
+  }
+
+  .nav-link {
+    @apply text-aisom-slate-600 hover:text-aisom-slate-900 font-medium text-sm transition-colors duration-200;
+  }
+
+  .documentation-style {
+    @apply max-w-4xl mx-auto space-y-8;
+  }
+
+  .module-container {
+    @apply bg-white border border-aisom-gunmetal-200 rounded-lg overflow-hidden;
+  }
+
+  .module-header {
+    @apply bg-aisom-gunmetal-700 text-white px-6 py-4 border-b border-aisom-gunmetal-600;
+  }
+
+  .module-content {
+    @apply px-6 py-6 space-y-4;
+  }
+}
